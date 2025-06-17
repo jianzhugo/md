@@ -11,13 +11,13 @@ const emit = defineEmits([`close`])
 const contributors = [
   {
     name: `yanglbme`,
-    imageUrl: `https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/md/images/support1.jpg`,
-    altText: `赞赏二维码 1`,
+    imageUrl: `https://s2.loli.net/2024/11/20/8hpEtd9MaPyQR2n.jpg`,
+    altText: `微信`,
   },
   {
     name: `yangfong`,
-    imageUrl: `https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/gh/doocs/md/images/support2.jpg`,
-    altText: `赞赏二维码 2`,
+    imageUrl: `https://s2.loli.net/2024/11/20/1t9SdqnJpsGov2B.png`,
+    altText: `支付宝`,
   },
 ]
 
@@ -35,7 +35,8 @@ function onUpdate(val: boolean) {
         <DialogTitle>赞赏</DialogTitle>
       </DialogHeader>
       <div class="text-center">
-        <p>若觉得项目不错，可以通过以下方式支持我们～</p>
+        <p>扫码可支持本站</p>
+        <p>若觉得项目不错，<a href="https://github.com/doocs/md" target="_blank">点我请支持原作者～</a></p>
         <div class="grid grid-cols-2 my-5 gap-4">
           <div v-for="contributor in contributors" :key="contributor.name" class="text-center">
             <img
